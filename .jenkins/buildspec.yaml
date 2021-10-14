@@ -20,6 +20,9 @@ registry:
     groupRepository: "npm-group"
     hostToArtifact: true
 
+package:
+  extras: []
+
 containerConfig:
   - name: results-app
     dockerFilePath: docker/Dockerfile
