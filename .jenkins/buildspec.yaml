@@ -2,7 +2,7 @@ build:
   resolveDependency: true
   chnageVersionNumber: false
   buildProject: true
-  runUnitTests: true
+  runUnitTests: false
   runSonarQubeTests: false
   packageCode: true
   uploadToRepository: true
