@@ -1,0 +1,25 @@
+build:
+  resolveDependency: true
+  chnageVersionNumber: false
+  buildProject: true
+  runUnitTests: true
+  runSonarQubeTests: false
+  packageCode: true
+  uploadToRepository: true
+  buildAsContainer: true
+  runPostBuildActions: false
+
+project:
+  name: results-app
+  builderVersion: "nodejs-latest"
+  preferedRegistryIndex: 0
+
+registry:
+  - id: "dev-nexus"
+    hostedRepository: "npm-hosted"
+    groupRepository: "npm-group"
+    hostToArtifact: true
+
+containerConfig:
+  - name: results-app
+    dockerFilePath: docker/Dockerfile
